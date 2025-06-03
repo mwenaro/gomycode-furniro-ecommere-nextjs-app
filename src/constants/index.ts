@@ -131,3 +131,25 @@ export const products: Product[] = [
     image: "/images/shop-images/image4.png",
   },
 ];
+export const BLOG_CATEGORIES = [
+  {
+    title:"crafts" , 
+    qty: 2
+  },
+  {
+    title: "Design",
+    qty: 8
+  },
+  {
+    title:"Handmade",
+    qty: 7
+  },
+  {
+    title:"Interior",
+    qty: 1
+  },
+  {
+    title:"Wood",
+    qty: 6
+  }
+]

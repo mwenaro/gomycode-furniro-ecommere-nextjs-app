@@ -2,6 +2,7 @@ import React from "react";
 import { BlogList } from "./BlogList";
 import { BlogSidebar } from "./BlogSidebar";
 import Features from "../shop/Features";
+import Image from "next/image";
 
 export default function BlogLayout() {
   return (
@@ -11,7 +12,7 @@ export default function BlogLayout() {
         className="w-full h-64 bg-cover bg-center flex flex-col items-center justify-center text-center"
         style={{ backgroundImage: `url('/blogimages/background.png')` }}
       >
-        <img src="/blogimages/main logo.png" alt="Logo" />
+        <Image src="/blogimages/main logo.png" alt="Logo" height={20} width={20} />
         <h1 className="text-3xl font-bold text-black">Blog</h1>
         <p className="text-sm text-gray-700 mt-2">
           <span className="text-black font-medium">Home</span> &gt; Blog
