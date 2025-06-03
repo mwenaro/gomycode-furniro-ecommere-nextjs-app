@@ -20,7 +20,7 @@ export default function ShopToolbar() {
 
         <div className="hidden sm:block border-l h-6 border-gray-400 mx-2" />
 
-        <p className="text-gray-700">Showing 1–16 of 32 results</p>
+        <p className="text-gray-700">Showing 1-16 of 32 results</p>
       </div>
 
       {/* Right section */}
@@ -32,7 +32,7 @@ export default function ShopToolbar() {
           <option>32</option>
         </select>
 
-        <span className="font-medium">Short by</span>
+        <span className="font-medium">Sort by</span>
         <select className="border px-2 py-1 bg-white text-gray-600">
           <option>Default</option>
           <option>Price: Low to High</option>
