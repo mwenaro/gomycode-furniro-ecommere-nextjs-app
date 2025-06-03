@@ -17,7 +17,7 @@ export function BlogCard({ image, tags, title }: BlogCardProps) {
         <span>{tags}</span>
       </div>
       <h2 className="text-2xl font-semibold text-black mb-4">{title}</h2>
-      <p className="text-[#9F9F9F] mb-6">
+      <p className="text-[#9F9F9F] mb-6 ">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae
         ultricies leo integer malesuada nunc. In nulla posuere sollicitudin
