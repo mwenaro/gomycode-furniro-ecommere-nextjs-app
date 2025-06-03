@@ -6,7 +6,7 @@ export function Header() {
   return (
     <header className="h-24">
       {/* Navbar */}
-      <nav className="flex items-center justify-between px-10 py-6">
+      <nav className="flex items-center justify-between px-10 py-6 overflow-hidden">
         <Link href="/" className="flex items-center space-x-2">
           <Image
             height={40}

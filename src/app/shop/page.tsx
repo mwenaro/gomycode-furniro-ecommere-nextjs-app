@@ -7,7 +7,7 @@ import ShopToolbar from "@/components/shop/ShopToolbar";
 export default function ShopPage() {
   return (
     <div className=" bg-white ">
-      <div className="px-6 md:px-12">
+      <div className="px-2 md:px-12">
         <ShopHero />
 
         <ShopToolbar />

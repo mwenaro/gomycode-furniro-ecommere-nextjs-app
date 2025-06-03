@@ -29,12 +29,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* Header */}
-        <Header />
-        {/* main */}
-        <main className="min-h-screen">{children}</main>
-        {/* Footer */}
-        <Footer />
+        <div className="min-h-screen bg-white max-w-7xl mx-auto">
+          {/* Header */}
+          <Header />
+          {/* main */}
+          <main className="min-h-screen">{children}</main>
+          {/* Footer */}
+          <Footer />
+        </div>
       </body>
     </html>
   );
@@ -44,10 +46,10 @@ export default function RootLayout({
  * error
  * not-found
  * route
- * 
+ *
  */
 
 /**
  * - server componets
- * - client components - localStorage, location, react hoooks, clicks, evenmts 
+ * - client components - localStorage, location, react hoooks, clicks, evenmts
  */

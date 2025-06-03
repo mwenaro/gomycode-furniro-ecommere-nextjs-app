@@ -1,39 +1,27 @@
+import { Product } from "@/types/Index";
 import Image from "next/image";
 import { FaHeart, FaRandom, FaShare } from "react-icons/fa";
 
-type ProductCardProps = {
-  title: string;
-  description: string;
-  price: string;
-  oldPrice?: string;
-  redtag?: string;
-  greentag?: string;
-  image: string;
-};
+interface ProductCardProps extends Product {}
 
 export default function ProductCard({
   title,
   description,
   price,
   oldPrice,
-  redtag,
-  greentag,
+  tag,
   image,
 }: ProductCardProps) {
+  const tagBg =  tag?.toLowerCase() === "new" ? "bg-[#2EC1AC]" : "bg-[#E97171]"
   return (
     <div className="border border-white  hover:shadow-lg relative group overflow-hidden bg-gray-100 gap-5 ">
       <div className="relative w-full aspect-square mb-4">
-        {redtag && (
-          <span className="absolute top-2 right-2 bg-[#E97171] text-white text-xs w-8 h-8 rounded-full z-10 font-semibold flex items-center justify-center">
-            {redtag}
-          </span>
-        )}
-
-        {greentag && (
-          <span className="absolute top-2 right-2 bg-[#2EC1AC] text-white text-xs w-8 h-8 rounded-full z-10 font-semibold flex items-center justify-center">
-            {greentag}
-          </span>
-        )}
+        {tag && <span
+          className={`absolute top-2 right-2 ${tagBg} text-white text-xs w-8 h-8 rounded-full z-10 font-semibold flex items-center justify-center`}
+        >
+          {tag}
+        </span>
+}
         <Image
           src={image}
           alt={title}
@@ -66,15 +54,12 @@ export default function ProductCard({
           <span className=" text-primary font-bold text-gray-700">{price}</span>{" "}
           {oldPrice && (
             <>
-            <br />
-            <span className="line-through text-gray-400">{oldPrice}</span>
+              <br />
+              <span className="line-through text-gray-400">{oldPrice}</span>
             </>
           )}
         </div>
       </div>
-
     </div>
-
-    
   );
 }
