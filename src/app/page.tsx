@@ -1,21 +1,19 @@
-import Hero from "@/components/home/Hero";
-import ProductCategories from "@/components/home/ProductCategories";
-import ProductShowcase from "@/components/home/Product-Showcase";
-import RoomInspiration from "@/components/home/RoomInspiration";
-import GallerySection from "@/components/home/GallerySection";
-
-
+import {
+  GallerySection,
+  HeroSection,
+  ProductCategories,
+  ProductShowcase,
+  RoomInspiration,
+} from "@/components/home";
 
 export default function Home() {
   return (
-    <main>
-      <Hero />
+    <>
+      <HeroSection />
       <ProductCategories />
-      <ProductShowcase /> 
+      <ProductShowcase />
       <RoomInspiration />
       <GallerySection />
-      
-      
-    </main>
+    </>
   );
 }

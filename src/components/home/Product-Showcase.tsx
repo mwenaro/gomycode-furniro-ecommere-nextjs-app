@@ -54,7 +54,7 @@ const products = [
   },
 ];
 
-const ProductShowcase: React.FC = () => {
+export const ProductShowcase: React.FC = () => {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
@@ -98,5 +98,3 @@ const ProductShowcase: React.FC = () => {
     </section>
   );
 };
-
-export default ProductShowcase;
