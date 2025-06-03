@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Features() {
   return (
-    <div className="bg-[#F9F1E7] py-15 px-4">
+    <div className="bg-[#F9F1E7] py-15 px-4 ">
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-left">
         {/* High Quality */}
         <div className="flex items-start gap-3">

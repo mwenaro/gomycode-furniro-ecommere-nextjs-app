@@ -6,7 +6,7 @@ interface BlogPostsProps {
 export function BlogPosts({ image, title }: BlogPostsProps) {
   return (
     <div>
-      <div className="flex items-start space-x-4">
+      <div className="flex items-start space-x-4 ">
         <img
           src={image}
           alt={title}
