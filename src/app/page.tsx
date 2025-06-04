@@ -1,3 +1,19 @@
-export default function HomePage() {
-  return <div>Hello from Home page</div>;
+import {
+  GallerySection,
+  HeroSection,
+  ProductCategories,
+  ProductShowcase,
+  RoomInspiration,
+} from "@/components/home";
+
+export default function Home() {
+  return (
+    <>
+      <HeroSection />
+      <ProductCategories />
+      <ProductShowcase />
+      <RoomInspiration />
+      <GallerySection />
+    </>
+  );
 }
