@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 export function Description() {
     return (
@@ -19,8 +20,8 @@ export function Description() {
 
             {/* cosy sofa images */}
             <div className="flex justify-center gap-4 w-6xl m-5">
-                <img src="/images/cosy-three-seater.png" alt="A cosy white three seater sofa" className="w-140" />
-                <img src="/images/cosy-four-seater.png" alt="A cosy white four seater sofa" className="w-140" /></div>
+                <Image height={348} width={605} src="/images/cosy-three-seater.png" alt="A cosy white three seater sofa" className="w-140" />
+                <Image height={348} width={605} src="/images/cosy-four-seater.png" alt="A cosy white four seater sofa" className="w-140" /></div>
         </div>
     )
 }

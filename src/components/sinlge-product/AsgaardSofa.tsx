@@ -1,21 +1,22 @@
+import Image from "next/image";
 
 export function AsgaardSofa() {
     return (
-        <div className="flex gap-5 justify-center">
+        <div className="flex gap justify-center">
             <div>
 
                 {/* small sofa images */}
                 <div>
-                    <img src="/images/blue-five-seater.png" alt="Blue five seater" className="bg-orange-50 rounded-xl m-5" />
-                    <img src="/images/grey-five-seater.png" alt="Grey five seater" className="bg-orange-50 rounded-xl m-5" />
-                    <img src="/images/white-two-seater.png" alt="White two seater" className="bg-orange-50 rounded-xl m-5" />
-                    <img src="/images/brown-three-seater.png" alt="Brown three seater" className="bg-orange-50 rounded-xl m-5" />
+                    <Image height={80} width={76} src="/images/blue-five-seater.png" alt="Blue five seater" className="bg-orange-50 rounded-xl m-5" />
+                    <Image height={80} width={76} src="/images/grey-five-seater.png" alt="Grey five seater" className="bg-orange-50 rounded-xl m-5" />
+                    <Image height={80} width={76} src="/images/white-two-seater.png" alt="White two seater" className="bg-orange-50 rounded-xl m-5" />
+                    <Image height={80} width={76} src="/images/brown-three-seater.png" alt="Brown three seater" className="bg-orange-50 rounded-xl m-5" />
                 </div>
             </div>
 
             {/* big sofa image */}
             <div className="">
-                <img src="/images/white-four-seater.png" alt="White four seater" className="bg-orange-50 rounded-xl m-5 md:h-[500px] md:w-[430px]" />
+                <Image height={500} width={430} src="/images/white-four-seater.png" alt="White four seater" className="bg-orange-50 rounded-xl m-5 md:h-[500px] md:w-[430px]" />
             </div>
             {/* asgaard sofa */}
             <div className="m-5">
@@ -24,8 +25,8 @@ export function AsgaardSofa() {
 
                 {/* rating and reveiw */}
                 <div className="flex gap-5 my-3">
-                    <img src="/images/rating-stars.png" alt="Rating stars" />
-                    <img src="/images/line.png" alt="Grey Line" />
+                    <Image height={17} width={124} src="/images/rating-stars.png" alt="Rating stars" />
+                    <Image height={0} width={1} src="/images/line.png" alt="Grey Line" />
                     <span className="text-xs text-zinc-300 pt-2">5 Customer Review</span>
                 </div>
 
@@ -37,14 +38,14 @@ export function AsgaardSofa() {
                     <h3 className="text-sm text-zinc-300 my-2">Size</h3>
 
                     <div className="flex gap-3">
-                        <img src="/images/l-icon.png" alt="L icon" /><img src="/images/xl-icon.png" alt="XL icon" /><img src="/images/xs-icon.png" alt="XS icon" />
+                        <Image height={30} width={30} src="/images/l-icon.png" alt="L icon" /><Image height={30} width={30} src="/images/xl-icon.png" alt="XL icon" /><Image height={30} width={30} src="/images/xs-icon.png" alt="XS icon" />
                     </div>
 
                     {/* coloring */}
                     <h3 className="text-sm text-zinc-300">Color</h3>
 
                     <div className="flex gap-3">
-                        <img src="/images/purple-circle.png" alt="Purple circle" /><img src="/images/black-circle.png" alt="Black circle" /><img src="/images/brown-circle.png" alt="Brown circle" />
+                        <Image height={30} width={30} src="/images/purple-circle.png" alt="Purple circle" /><Image height={30} width={30} src="/images/black-circle.png" alt="Black circle" /><Image height={30} width={30} src="/images/brown-circle.png" alt="Brown circle" />
                     </div>
 
                     {/* cart */}
@@ -62,9 +63,9 @@ export function AsgaardSofa() {
                     <span className="text-zinc-300">SKU       : SS01</span>
                     <span className="text-zinc-300">Catergory : Sofas</span>
                     <span className="text-zinc-300">Tags      : Sofas,Chair,Home,Shop</span>
-                    <span className="text-zinc-300 flex gap-4">Share     : <img src="/images/facebook-icon.png" alt="Facebook icon" />
-                        <img src="/images/linkedin-icon.png" alt="Linkedin icon" />
-                        <img src="/images/x-icon.png" alt="X icon" /></span>
+                    <span className="text-zinc-300 flex gap-4">Share     : <Image height={20} width={20} src="/images/facebook-icon.png" alt="Facebook icon" />
+                        <Image height={20} width={20} src="/images/linkedin-icon.png" alt="Linkedin icon" />
+                        <Image height={20} width={20} src="/images/x-icon.png" alt="X icon" /></span>
                 </div>
             </div>
             <hr />
