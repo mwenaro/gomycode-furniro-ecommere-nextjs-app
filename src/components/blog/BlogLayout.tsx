@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function BlogLayout() {
   return (
-    <div className="bg-white container mx-auto ">
+    <section className="bg-white container mx-auto ">
       {/* hero section */}
       <div
         className="relative w-full h-64 flex flex-col items-center justify-center text-center"
@@ -28,7 +28,7 @@ export default function BlogLayout() {
           <span className="text-black ">Home</span> &gt; Blog
         </p>
       </div>
-      
+
       <div className="flex flex-col lg:flex-row gap-8 pt-18 px-6 md:px-18">
         {/* Left section: blog list */}
         <div className="w-full lg:w-2/3">
@@ -59,6 +59,6 @@ export default function BlogLayout() {
       <div className="pt-6">
         <Features />
       </div>
-    </div>
+    </section>
   );
 }

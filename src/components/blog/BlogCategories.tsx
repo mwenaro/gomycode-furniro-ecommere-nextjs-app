@@ -6,8 +6,6 @@ import Image from "next/image";
 export function BlogCategories() {
   const [searchTerm, setSearchTerm] = useState("");
   const [debouncedTerm, setDebouncedTerm] = useState("");
-
-  // Debounce input with 300ms delay
   useEffect(() => {
     const handler = setTimeout(() => {
       setDebouncedTerm(searchTerm);
@@ -16,7 +14,7 @@ export function BlogCategories() {
     return () => clearTimeout(handler);
   }, [searchTerm]);
 
-  // Filter categories based on debounced term
+  // Filter categories
   const filteredCategories = BLOG_CATEGORIES.filter((category) =>
     category.title.toLowerCase().includes(debouncedTerm.toLowerCase())
   );
@@ -40,12 +38,16 @@ export function BlogCategories() {
       </div>
       <h3 className="text-lg font-semibold text-black mb-4">Categories</h3>
       <ul className="space-y-5 text-sm text-[#9F9F9F]">
-        {BLOG_CATEGORIES.map((category) => (
-          <li className="flex justify-between" key={category.title}>
-            <span>{category.title}</span>
-            <span>{category.qty}</span>
-          </li>
-        ))}
+        {filteredCategories.length > 0 ? (
+          filteredCategories.map((category) => (
+            <li className="flex justify-between" key={category.title}>
+              <span>{category.title}</span>
+              <span>{category.qty}</span>
+            </li>
+          ))
+        ) : (
+          <li>No matching categories found.</li>
+        )}
       </ul>
     </div>
   );

@@ -2,11 +2,9 @@ import React from "react";
 import { BlogPosts } from "./BlogPosts";
 import { BlogCategories } from "./BlogCategories";
 
-
 export function BlogSidebar() {
   return (
-    <div className="space-y-10 lg:max-w-[13rem] mx-auto">
-
+    <section className="space-y-10 lg:max-w-[13rem] mx-auto">
       {/* Categories */}
       <div>
         <BlogCategories />
@@ -38,6 +36,6 @@ export function BlogSidebar() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
