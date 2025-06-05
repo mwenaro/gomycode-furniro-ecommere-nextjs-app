@@ -8,7 +8,7 @@ export default function CheckoutLayout() {
       {/* hero section */}
       <div
         className="w-full h-64 bg-cover bg-center flex flex-col items-center justify-center text-center"
-        style={{ backgroundImage: `url('/checkoutimages/background.png')` }}
+        style={{ backgroundImage: `url('/checkoutimages/background.jpg')` }}
       >
         <Image src="/checkoutimages/main logo.png" alt="Logo" height={20} width={20} />
                 <h1 className="text-3xl font-bold text-black">Checkout</h1>
@@ -18,7 +18,7 @@ export default function CheckoutLayout() {
       </div>
       {/*Main Section */}
       {/* Billing Details */}
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 gap-8 text">
         <form className="space-y-4">
           <div className="grid grid-cols-2 gap-4">
             <input placeholder="First Name" className="border p-2" />
