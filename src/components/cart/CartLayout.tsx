@@ -16,7 +16,7 @@ export default function CartLayout() {
       {/* hero section */}
       <div
         className="w-full h-64 bg-cover bg-center flex flex-col items-center justify-center text-center"
-        style={{ backgroundImage: `url('/cartimages/background.png')` }}
+        style={{ backgroundImage: `url('/cartimages/background.jpg')` }}
       >
         <Image
           src="/cartimages/main logo.png"
@@ -32,7 +32,7 @@ export default function CartLayout() {
       {/* main section */}
             <div className="grid md:grid-cols-3 gap-8">
               <div className="md:col-span-2">
-                <div className="flex justify-between font-semibold border-b py-2">
+                <div className="flex justify-between font-semibold border-b py-2 textcolor bg-[#F9F1E7]">
                   <span>Product</span>
                   <span>Price</span>
                   <span>Quantity</span>
@@ -63,7 +63,7 @@ export default function CartLayout() {
                   <span className="text-orange-500 font-bold">Rs. {cartItem.price.toLocaleString()}</span>
                 </div>
                 <Link href="/checkout">
-                  <button className="bg-black text-white w-full py-2 rounded">Check Out</button>
+                  <button className="bg-[#F9F1E7] text-black w-full py-2 rounded">Check Out</button>
                 </Link>
               </div>
             </div>
