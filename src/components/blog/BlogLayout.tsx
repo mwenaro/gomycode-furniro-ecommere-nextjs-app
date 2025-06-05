@@ -1,4 +1,3 @@
-import React from "react";
 import { BlogList } from "./BlogList";
 import { BlogSidebar } from "./BlogSidebar";
 import Features from "../shop/Features";
@@ -9,15 +8,27 @@ export default function BlogLayout() {
     <div className="bg-white container mx-auto ">
       {/* hero section */}
       <div
-        className="w-full h-64 bg-cover bg-center flex flex-col items-center justify-center text-center"
-        style={{ backgroundImage: `url('/blogimages/background.png')` }}
+        className="relative w-full h-64 flex flex-col items-center justify-center text-center"
+        style={{
+          backgroundImage: "url('/blogimages/background.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          filter: "brightness(95%) contrast(90%)",
+        }}
       >
-        <Image src="/blogimages/main logo.png" alt="Logo" height={20} width={20} />
-        <h1 className="text-3xl font-bold text-black">Blog</h1>
-        <p className="text-sm text-gray-700 mt-2">
-          <span className="text-black font-medium">Home</span> &gt; Blog
+        <Image
+          src="/blogimages/main logo.png"
+          alt="Logo"
+          height={70}
+          width={70}
+          className="filter brightness-95 contrast-150"
+        />
+        <h1 className="text-5xl font-bold text-black">Blog</h1>
+        <p className="text-2xl text-gray-700 mt-2 font-semibold">
+          <span className="text-black ">Home</span> &gt; Blog
         </p>
       </div>
+      
       <div className="flex flex-col lg:flex-row gap-8 pt-18 px-6 md:px-18">
         {/* Left section: blog list */}
         <div className="w-full lg:w-2/3">

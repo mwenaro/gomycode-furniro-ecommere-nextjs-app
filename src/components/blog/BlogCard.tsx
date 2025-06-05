@@ -10,13 +10,13 @@ interface BlogCardProps {
 export function BlogCard({ image, tags, title }: BlogCardProps) {
   return (
     <div className="mb-10">
-      <Image width={40} height={40} src={image} alt={title} className="w-full rounded-lg mb-4" />
+      <Image width={800} height={700} src={image} alt={title} className="w-full rounded-lg mb-4" />
       <div className="flex items-center text-sm text-[#9F9F9F] space-x-4 mb-4">
-        <Image width={40} height={40} src="/blogimages/dashicon.png" alt="dashicon" />
+        <Image width={20} height={20} src="/blogimages/dashicon.png" alt="dashicon" />
         <span>Admin</span>
-        <Image width={40} height={40} src="/blogimages/calender.png" alt="calender" />
+        <Image width={20} height={20} src="/blogimages/calender.png" alt="calender" />
         <span>14 Oct 2022</span>
-        <Image width={40} height={40} src="/blogimages/tag.png" alt="tag" />
+        <Image width={20} height={20} src="/blogimages/tag.png" alt="tag" />
         <span>{tags}</span>
       </div>
       <h2 className="text-2xl font-semibold text-black mb-4">{title}</h2>
