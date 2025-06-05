@@ -4,23 +4,9 @@ import { BlogCategories } from "./BlogCategories";
 
 export function BlogSidebar() {
   return (
-    <div className="space-y-10 lg:max-w-[13rem] mx-auto">
-      {/* search bar */}
-      <div className="relative">
-        <input
-          type="text"
-          placeholder="Search..."
-          className="w-full px-4 py-2 border border-gray-700 rounded-md text-gray-500"
-        />
-        <img
-          src="/blogimages/search.png"
-          alt="Search"
-          className="absolute right-2 top-1/2 transform -translate-y-1/2 w-4 h-4"
-        />
-      </div>
+    <section className="space-y-10 lg:max-w-[13rem] mx-auto">
       {/* Categories */}
       <div>
-        <h3 className="text-lg font-semibold text-black mb-4">Categories</h3>
         <BlogCategories />
       </div>
 
@@ -50,6 +36,6 @@ export function BlogSidebar() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

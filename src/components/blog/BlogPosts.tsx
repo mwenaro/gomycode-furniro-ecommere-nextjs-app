@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface BlogPostsProps {
   image: string;
   title: string;
@@ -7,7 +9,9 @@ export function BlogPosts({ image, title }: BlogPostsProps) {
   return (
     <div>
       <div className="flex items-start space-x-4 ">
-        <img
+        <Image
+          width={40}
+          height={40}
           src={image}
           alt={title}
           className="w-14 h-14 rounded-md object-cover flex-shrink-0"
