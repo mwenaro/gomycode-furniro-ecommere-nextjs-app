@@ -1,4 +1,4 @@
-import { Product } from "@/types/Index";
+import { Product } from "@/types";
 import Image from "next/image";
 import { FaHeart, FaRandom, FaShare } from "react-icons/fa";
 

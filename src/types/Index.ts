@@ -8,3 +8,4 @@ export type Product = {
   tag?: string;
   image: string;
 };
+
