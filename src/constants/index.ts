@@ -1,4 +1,4 @@
-import { Product } from "@/types/Index";
+import { Product } from "@/types";
 
 export const NAV_ITEMS = [
   { label: "Home", href: "/" },
@@ -153,3 +153,36 @@ export const BLOG_CATEGORIES = [
     qty: 6
   }
 ]
+
+
+export const RELATIVE_PRODUCTS: Product[] = [
+  {
+    title: "Syltherine",
+    description: "Stylish cafe chair",
+    price: "Rp 2.500.000",
+    oldPrice: "Rp 3.500.000",
+    tag: "-30%",
+    image: "/images/syltherine.png",
+  },
+  {
+    title: "Leviosa",
+    description: "Stylish cafe chair",
+    price: "Rp 2.500.000",
+    image: "/images/leviosa.png",
+  },
+  {
+    title: "Lolito",
+    description: "Luxury big sofa",
+    price: "Rp 7.000.000",
+    oldPrice: "Rp 14.000.000",
+    tag: "-50%",
+    image: "/images/lolito.png",
+  },
+  {
+    title: "Respira",
+    description: "Outdoor bar table and stool",
+    price: "Rp 500.000",
+    tag: "New",
+    image: "/images/respira.png",
+  },
+];

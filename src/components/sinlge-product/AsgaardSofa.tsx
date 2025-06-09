@@ -2,17 +2,17 @@ import Image from "next/image";
 
 export function AsgaardSofa() {
     return (
-        <div className="flex gap justify-center">
-            <div>
+        <div className="flex flex-col md:flex-row gap justify-center">
 
-                {/* small sofa images */}
-                <div>
-                    <Image height={80} width={76} src="/images/blue-five-seater.png" alt="Blue five seater" className="bg-orange-50 rounded-xl m-5" />
-                    <Image height={80} width={76} src="/images/grey-five-seater.png" alt="Grey five seater" className="bg-orange-50 rounded-xl m-5" />
-                    <Image height={80} width={76} src="/images/white-two-seater.png" alt="White two seater" className="bg-orange-50 rounded-xl m-5" />
-                    <Image height={80} width={76} src="/images/brown-three-seater.png" alt="Brown three seater" className="bg-orange-50 rounded-xl m-5" />
-                </div>
+
+            {/* small sofa images */}
+            <div>
+                <Image height={80} width={76} src="/images/blue-five-seater.png" alt="Blue five seater" className="bg-orange-50 rounded-xl m-5" />
+                <Image height={80} width={76} src="/images/grey-five-seater.png" alt="Grey five seater" className="bg-orange-50 rounded-xl m-5" />
+                <Image height={80} width={76} src="/images/white-two-seater.png" alt="White two seater" className="bg-orange-50 rounded-xl m-5" />
+                <Image height={80} width={76} src="/images/brown-three-seater.png" alt="Brown three seater" className="bg-orange-50 rounded-xl m-5" />
             </div>
+
 
             {/* big sofa image */}
             <div className="">
@@ -68,7 +68,7 @@ export function AsgaardSofa() {
                         <Image height={20} width={20} src="/images/x-icon.png" alt="X icon" /></span>
                 </div>
             </div>
-            <hr />
+            <hr className="border-t-2 border-gray-300" />
         </div>
     )
 }
